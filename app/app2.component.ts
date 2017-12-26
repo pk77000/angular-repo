@@ -7,11 +7,14 @@ selector: 'pm-app',
 template: `
 <div>
  <h2> Hello, world</h2>
+ <h2> Hello {{name}}</h2>
 </div>
 `
 }
 )
 export class AppComponent{
+
+    name:String = "Prashant"
 
 
 }
