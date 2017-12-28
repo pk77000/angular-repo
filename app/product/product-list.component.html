@@ -52,12 +52,15 @@
     [style.margin.px]='imageMargin'>
 </td>
 
+
 <td>{{ product.productName}}</td>
 <td>{{ product.productCode}}</td>
 <td>{{ product.releaseDate}}</td>
 <td>{{ product.price}}</td>
-<td>{{ product.starRating}}</td>
-</tr>
+<td><pm-star [rating] = 'product.starRating'>
+    </pm-star>
+</td>
+
                 </tbody>
             </table>
         </div>

@@ -7,17 +7,16 @@ import{ProductListComponent} from "./product/product-list.component"
 import {FormsModule} from  "@angular/forms";
 import {ProductService} from "./product/products.service";
 import {HttpClientModule} from '@angular/common/http';
+import {StarComponent} from './feature/star.components';
 
 @NgModule({
     imports: [BrowserModule, 
     FormsModule,
     HttpClientModule],
-    declarations: [AppComponent, ProductListComponent],
+    declarations: [AppComponent, ProductListComponent,StarComponent ],
     bootstrap: [AppComponent],
     providers: [ProductService]
-
     
-
 })
 export class AppModule{
 
