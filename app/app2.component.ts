@@ -5,13 +5,11 @@ import {Component} from "@angular/core"
 
 selector: 'pm-app',
 template: `
-<div>
- <h2> Hello, world</h2>
- <h2> Hello {{name}}</h2>
-</div>
-<div>
-    <pm-products></pm-products>
-</div>
+<ul class='nav navbar-nav'>
+<li><a [routerLink]="['/welcome']">Home </a> </li>
+<li><a [routerLink]="['/products']">Product List </a> </li>
+</ul>
+<router-outlet></router-outlet>
 `,
 moduleId:module.id
 }
