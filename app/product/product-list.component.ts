@@ -68,7 +68,10 @@ performFilter(filterBy: String): IProduct[] {
 
 ngOnInit(): void {
 this._productService.getProducts()
-.subscribe(products => this.products= products,
+.subscribe(products => {
+    this.products= products,
+    this.selectedProduct = products;
+},
 error => this.errorMessage= <any>error);
 } 
 

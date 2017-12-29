@@ -10,7 +10,8 @@ import 'rxjs/add/operator/do';
 
 @Injectable()
 export class ProductService{
-    private _productUrl = "/app/product/products.json";
+    //private _productUrl = "/app/product/products.json";
+    private _productUrl = "http://localhost:8080/api/v1/product";
     constructor(private _http: HttpClient) {
         
     }
